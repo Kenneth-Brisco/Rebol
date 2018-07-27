@@ -4,7 +4,6 @@ import { Provider } from "react-redux";
 import { Header } from "./shared/Header";
 import RentalListing from "./components/rental/rental-listing/RentalListing";
 import RentalDetail from "./components/rental/rental-detail/RentalDetail";
-
 import "./App.css";
 
 const store = require("./reducers").init();
