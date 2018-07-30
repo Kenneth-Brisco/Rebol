@@ -17,10 +17,10 @@ export class Cacher {
   }
 
   cacheValue(key, value) {
-    this.cache[camelCase[key]] = value;
+    this.cache[camelCase(key)] = value;
   }
 
   getCachedValue(key) {
-    return this.cache[camelCase[key]];
+    return this.cache[camelCase(key)];
   }
 }
