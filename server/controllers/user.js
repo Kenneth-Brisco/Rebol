@@ -67,7 +67,12 @@ exports.register = function(req, res) {
 
     if (existingUser) {
       return res.status(422).send({
-        errors: [{ title: "Invalid email!", detail: "Email not available!" }]
+        errors: [
+          {
+            title: "Invalid email!",
+            detail: "User with this email already exist!"
+          }
+        ]
       });
     }
     const user = new User({
