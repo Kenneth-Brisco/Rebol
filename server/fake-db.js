@@ -46,6 +46,11 @@ class FakeDb {
         username: "Test user",
         email: "test@gmail.com",
         password: "test"
+      },
+      {
+        username: "Test user1",
+        email: "test5@gmail.com",
+        password: "test5"
       }
     ];
   }
@@ -56,6 +61,7 @@ class FakeDb {
   }
   pushDataToDb() {
     const user = new User(this.users[0]);
+    const user2 = new User(this.users[1]);
 
     this.rentals.forEach(rental => {
       const newRental = new Rental(rental);
@@ -67,6 +73,7 @@ class FakeDb {
     });
 
     user.save();
+    user2.save();
   }
 
   async seedDb() {
