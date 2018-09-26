@@ -10,7 +10,6 @@ const LoginForm = props => {
     <form onSubmit={handleSubmit(submitCb)}>
       <Field
         name="email"
-        component="input"
         label="email"
         type="Email"
         className="form-control"
@@ -20,7 +19,6 @@ const LoginForm = props => {
       <Field
         name="password"
         label="Password"
-        component="input"
         type="password"
         className="form-control"
         component={BwmInput}
