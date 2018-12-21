@@ -4,6 +4,7 @@ const INITIAL_STATE = {
   isAuth: false,
   errors: []
 };
+//redesign for performance
 
 export const authReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
