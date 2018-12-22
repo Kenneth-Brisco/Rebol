@@ -8,6 +8,8 @@ import {
   InfoWindow
 } from "react-google-maps";
 
+//map
+
 function MapComponent(props) {
   const { coordinates, isError, isLocationLoaded } = props;
   return (
